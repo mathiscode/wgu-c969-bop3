@@ -57,7 +57,17 @@
                     </Grid>
                 </StackPanel>
             </GroupBox>
-            <Button x:Name="NewCustomerButton" Content="{lex:Loc CreateCustomer}" Margin="0,20,0,0" Height="41" FontSize="22" FontWeight="Bold" Click="NewCustomerButton_Click" />
+            <Button x:Name="NewCustomerButton" Content="{lex:Loc CreateCustomer}" Margin="0,20,0,0" Height="41" FontSize="22" FontWeight="Bold" Click="NewCustomerButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect Color="#FFCBCBCB"/>
+                </Button.Effect>
+
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5" />
+                    </Style>
+                </Button.Resources>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

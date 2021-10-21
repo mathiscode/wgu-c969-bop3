@@ -171,7 +171,17 @@
                 </StackPanel>
             </GroupBox>
 
-            <Button x:Name="NewAppointmentButton" Content="{lex:Loc CreateAppointment}" Margin="0,20,0,0" Height="41" FontSize="22" FontWeight="Bold" Click="NewAppointmentButton_Click" />
+            <Button x:Name="NewAppointmentButton" Content="{lex:Loc CreateAppointment}" Margin="0,20,0,0" Height="41" FontSize="22" FontWeight="Bold" Click="NewAppointmentButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect Color="#FFCBCBCB"/>
+                </Button.Effect>
+
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5" />
+                    </Style>
+                </Button.Resources>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>
