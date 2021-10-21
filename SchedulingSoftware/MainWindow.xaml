@@ -14,7 +14,7 @@
         Icon="icon.png" Background="#FF121212">
 
     <Grid>
-        <Label Foreground="White" Content="{lex:Loc WindowTitle}" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" />
+        <Label Foreground="White" Content="{lex:Loc WindowTitle}" HorizontalContentAlignment="Center" FontSize="16" FontWeight="Bold" />
 
         <TabControl x:Name="TabControl" HorizontalAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="10,50,10,10">
             <TabItem Header="{lex:Loc Appointments}">
@@ -76,7 +76,7 @@
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
 
-                        <Button x:Name="NewAppointmentButton" MaxHeight="75" HorizontalContentAlignment="Center"  Grid.Column="0" Content="{lex:Loc NewAppointment}" FontSize="24" FontFamily="Segoe UI Black" Click="NewAppointmentButton_Click" Margin="50,0,50,0">
+                        <Button x:Name="NewAppointmentButton" MaxHeight="75" HorizontalContentAlignment="Center" Grid.Column="0" Content="{lex:Loc NewAppointment}" FontSize="16" FontFamily="Segoe UI Black" Click="NewAppointmentButton_Click" Margin="50,0,50,0">
                             <Button.Effect>
                                 <DropShadowEffect Color="#FFCBCBCB"/>
                             </Button.Effect>
@@ -88,7 +88,7 @@
                             </Button.Resources>
                         </Button>
 
-                        <Button x:Name="EditAppointmentButton" MaxHeight="75" HorizontalContentAlignment="Center" Grid.Column="1" Content="{lex:Loc EditAppointment}" FontSize="24" FontFamily="Segoe UI Black" Click="EditAppointmentButton_Click" Margin="0,0,50,0">
+                        <Button x:Name="EditAppointmentButton" MaxHeight="75" HorizontalContentAlignment="Center" Grid.Column="1" Content="{lex:Loc EditAppointment}" FontSize="16" FontFamily="Segoe UI Black" Click="EditAppointmentButton_Click" Margin="0,0,50,0">
                             <Button.Effect>
                                 <DropShadowEffect Color="#FFCBCBCB"/>
                             </Button.Effect>
@@ -100,7 +100,7 @@
                             </Button.Resources>
                         </Button>
 
-                        <Button x:Name="DeleteAppointmentButton" MaxHeight="75" HorizontalContentAlignment="Center" Grid.Column="2" Content="{lex:Loc DeleteAppointment}" FontSize="24" FontFamily="Segoe UI Black" Click="DeleteAppointmentButton_Click" Margin="0,0,50,0">
+                        <Button x:Name="DeleteAppointmentButton" MaxHeight="75" HorizontalContentAlignment="Center" Grid.Column="2" Content="{lex:Loc DeleteAppointment}" FontSize="16" FontFamily="Segoe UI Black" Click="DeleteAppointmentButton_Click" Margin="0,0,50,0">
                             <Button.Effect>
                                 <DropShadowEffect Color="#FFCBCBCB"/>
                             </Button.Effect>
@@ -151,14 +151,14 @@
                         </DataGrid.Columns>
                     </DataGrid>
 
-                    <Grid Grid.Row="2" Margin="0,200,0,0" VerticalAlignment="Stretch">
+                    <Grid Grid.Row="2" Margin="0,75,0,0" VerticalAlignment="Stretch">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition />
                             <ColumnDefinition />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
 
-                        <Button x:Name="NewCustomerButton" Content="{lex:Loc NewCustomer}" MaxHeight="75" HorizontalContentAlignment="Center" Grid.Column="0" FontSize="24" FontFamily="Segoe UI Black" Click="NewCustomerButton_Click" Margin="50,0,50,0">
+                        <Button x:Name="NewCustomerButton" Content="{lex:Loc NewCustomer}" MaxHeight="75" HorizontalContentAlignment="Center" Grid.Column="0" FontSize="16" FontFamily="Segoe UI Black" Click="NewCustomerButton_Click" Margin="50,0,50,0">
                             <Button.Effect>
                                 <DropShadowEffect Color="#FFCBCBCB"/>
                             </Button.Effect>
@@ -170,7 +170,7 @@
                             </Button.Resources>
                         </Button>
 
-                        <Button x:Name="EditCustomerButton" Content="{lex:Loc EditCustomer}" MaxHeight="75" HorizontalContentAlignment="Center" Grid.Column="1" FontSize="24" FontFamily="Segoe UI Black" Click="EditCustomerButton_Click" Margin="0,0,50,0">
+                        <Button x:Name="EditCustomerButton" Content="{lex:Loc EditCustomer}" MaxHeight="75" HorizontalContentAlignment="Center" Grid.Column="1" FontSize="16" FontFamily="Segoe UI Black" Click="EditCustomerButton_Click" Margin="0,0,50,0">
                             <Button.Effect>
                                 <DropShadowEffect Color="#FFCBCBCB"/>
                             </Button.Effect>
@@ -182,7 +182,7 @@
                             </Button.Resources>
                         </Button>
 
-                        <Button x:Name="DeleteCustomerButton" Content="{lex:Loc DeleteCustomer}" MaxHeight="75" HorizontalContentAlignment="Center" Grid.Column="2" FontSize="24" FontFamily="Segoe UI Black" Click="DeleteCustomerButton_Click" Margin="0,0,50,0">
+                        <Button x:Name="DeleteCustomerButton" Content="{lex:Loc DeleteCustomer}" MaxHeight="75" HorizontalContentAlignment="Center" Grid.Column="2" FontSize="16" FontFamily="Segoe UI Black" Click="DeleteCustomerButton_Click" Margin="0,0,50,0">
                             <Button.Effect>
                                 <DropShadowEffect Color="#FFCBCBCB"/>
                             </Button.Effect>
@@ -208,7 +208,7 @@
                         <RowDefinition />
                     </Grid.RowDefinitions>
 
-                    <Button x:Name="ReportAppointmentTypesButton" Height="75" Grid.Column="0" VerticalAlignment="Top" Content="{lex:Loc AppointmentTypes}" FontSize="24" FontFamily="Segoe UI Black" Margin="50,50,50,25" Click="ReportAppointmentTypesButton_Click">
+                    <Button x:Name="ReportAppointmentTypesButton" Height="75" Grid.Column="0" VerticalAlignment="Top" Content="{lex:Loc AppointmentTypes}" FontSize="16" FontFamily="Segoe UI Black" Margin="50,50,50,25" Click="ReportAppointmentTypesButton_Click">
                         <Button.Effect>
                             <DropShadowEffect Color="#FFCBCBCB"/>
                         </Button.Effect>
@@ -220,7 +220,7 @@
                         </Button.Resources>
                     </Button>
 
-                    <Button x:Name="ReportConsultantSchedulesButton" Height="75" Grid.Column="1" VerticalAlignment="Top" Content="{lex:Loc ConsultantSchedules}" FontSize="24" FontFamily="Segoe UI Black" Margin="50,50,50,25" Click="ReportConsultantSchedulesButton_Click">
+                    <Button x:Name="ReportConsultantSchedulesButton" Height="75" Grid.Column="1" VerticalAlignment="Top" Content="{lex:Loc ConsultantSchedules}" FontSize="16" FontFamily="Segoe UI Black" Margin="50,50,50,25" Click="ReportConsultantSchedulesButton_Click">
                         <Button.Effect>
                             <DropShadowEffect Color="#FFCBCBCB"/>
                         </Button.Effect>
@@ -232,7 +232,7 @@
                         </Button.Resources>
                     </Button>
 
-                    <Button x:Name="ReportConsultantHoursButton" Height="75" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Content="{lex:Loc ConsultantHours}" FontSize="24" FontFamily="Segoe UI Black" Margin="50,50,50,25" Click="ReportConsultantHoursButton_Click">
+                    <Button x:Name="ReportConsultantHoursButton" Height="75" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Content="{lex:Loc ConsultantHours}" FontSize="16" FontFamily="Segoe UI Black" Margin="50,50,50,25" Click="ReportConsultantHoursButton_Click">
                         <Button.Effect>
                             <DropShadowEffect Color="#FFCBCBCB"/>
                         </Button.Effect>
