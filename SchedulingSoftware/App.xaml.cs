@@ -28,10 +28,12 @@ namespace SchedulingSoftware
         {
             // For development
             //CultureInfo startupCulture = new CultureInfo("es");
-            //LocalizeDictionary.Instance.SetCurrentThreadCulture = true;
-            //LocalizeDictionary.Instance.Culture = startupCulture;
             //Thread.CurrentThread.CurrentCulture = startupCulture;
             //Thread.CurrentThread.CurrentUICulture = startupCulture;
+
+            CultureInfo startupCulture = Thread.CurrentThread.CurrentUICulture;
+            LocalizeDictionary.Instance.SetCurrentThreadCulture = true;
+            LocalizeDictionary.Instance.Culture = startupCulture;
 
             string connectionString = "server=localhost;port=3306;user=sqlUser;password=Passw0rd!;database=client_schedule";
             MySqlConnection mysqlConnection = new MySqlConnection(connectionString);
