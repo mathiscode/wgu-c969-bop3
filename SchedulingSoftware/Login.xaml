@@ -15,7 +15,7 @@
 
     <Grid>
         <Label x:Name="title" Content="{lex:Loc WindowTitle}" HorizontalContentAlignment="Center" Foreground="White" FontFamily="Rockwell Condensed" FontSize="24" Margin="10,0,0,0" Width="374" />
-        <Label x:Name="label" Content="{lex:Loc LoginSubtitle}" HorizontalContentAlignment="Center" Foreground="White" FontFamily="Rockwell Condensed" FontSize="24" Margin="10,43,5,0" Width="379"/>
+        <Label x:Name="label" Content="{lex:Loc LoginSubtitle}" HorizontalContentAlignment="Center" Foreground="White" FontFamily="Rockwell Condensed" FontSize="18" Margin="10,43,5,0" Width="379"/>
 
         <Label x:Name="UsernameLabel" Content="{lex:Loc Username}" Foreground="White" FontSize="18" Margin="10,102,-10,369" />
         <TextBox x:Name="Username" Margin="10,105,10,267" VerticalContentAlignment="Center" Height="45" FontSize="24" FocusManager.FocusedElement="{Binding RelativeSource={RelativeSource Self}}" />
