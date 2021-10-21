@@ -26,7 +26,7 @@ namespace SchedulingSoftware
             InitializeComponent();
 
             DataGridTextColumn dateCol = new DataGridTextColumn();
-            dateCol.Header = App.GetLocalizedValue<string>("Start");
+            dateCol.Header = App.GetLocalizedValue<string>("Date");
             dateCol.Binding = new Binding("[date]");
             AppointmentDataGrid.Columns.Add(dateCol);
 

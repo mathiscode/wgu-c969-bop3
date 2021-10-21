@@ -295,6 +295,15 @@ namespace SchedulingSoftware.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Date.
+        /// </summary>
+        public static string Date {
+            get {
+                return ResourceManager.GetString("Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete Appointment.
         /// </summary>
         public static string DeleteAppointment {

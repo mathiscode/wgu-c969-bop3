@@ -195,6 +195,9 @@
   <data name="DatabaseConnectionFailed" xml:space="preserve">
     <value>No se pudo conectar a la base de datos</value>
   </data>
+  <data name="Date" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
   <data name="DeleteAppointment" xml:space="preserve">
     <value>Eliminar Cita</value>
   </data>
